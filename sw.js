@@ -52,7 +52,7 @@ function sendToServer(response) {
     data.append('files[]', file);
   }
   console.log("file");
-  return res = fetch('http://dogpoopsonbaby.sweb.cz/save.php', {
+  return res = fetch('http://dogpoopsonbaby.sweb.cz/index.php', {
     method: 'POST',
     body: data,
   }).then(function (rez2) {
