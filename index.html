@@ -139,7 +139,7 @@
 
 
         function handleFileSelection(evt) {
-            var files = evt.target.files ?? evt.dataTransfer.files; // The files selected by the user (as a FileList object).
+            var files = evt.target.files || evt.dataTransfer.files; // The files selected by the user (as a FileList object).
             if (!files) {
                 // displayMessage("<p>At least one selected file is invalid - do not select any folders.</p><p>Please reselect and try again.</p>");
                 return;
